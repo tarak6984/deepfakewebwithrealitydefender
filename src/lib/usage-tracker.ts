@@ -15,7 +15,7 @@ interface UsageStats {
 
 class UsageTracker {
   private storageKey = 'rd_usage_stats';
-  private freeTierLimit = 50; // Reality Defender free tier limit
+  private freeTierLimit = 999; // Increased limit for development
 
   getUsageStats(): UsageStats {
     // SSR-safe localStorage access
